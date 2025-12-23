@@ -29,7 +29,9 @@ In the room provided by TryHackMe, there are a plenty of job roles that are focu
 
  ## My thoughts about this room
 
-Honestly, there is no hands-on lab for this room. It focuses mostly on what are the job opportunities available in the cyber security market. Interestingly, there is a quiz that helps me determine which role that I should take to specialise in the Cyber Security market. The link will be provided on this [text](https://static-labs.tryhackme.cloud/sites/careers-quiz/). After I tried answering the questions on the link provided, in addition, I may suitable to become a **Penetration Tester** as I may have the ability to think like an attacker itself. 
+Honestly, there is no hands-on lab for this room. It focuses mostly on what are the job opportunities available in the cyber security market. Interestingly, there is a quiz that helps me determine which role that I should take to specialise in the Cyber Security market. The link will be provided on this [text](https://static-labs.tryhackme.cloud/sites/careers-quiz/). After I tried answering the questions on the link provided, in addition, I may suitable to become a **Penetration Tester** as I may have the ability to think like an attacker itself. Here is the proof:
+
+![Cyber sec career results](Assets/Results.png "Results on the overall cyber career quiz.")
 
 On the last few words in the Quiz section, there is a blog provided by the team. The title is "How to Leverage Online Training to Achieve High Paying Careers". Reading the title, I am assuming that it teaches the user on how to integrate an online training platform, like TryHackMe, to achieve a career that you want to become. There are several steps that I thought it would be interesting to discuss:
 1. Filter down your ultimate goal
