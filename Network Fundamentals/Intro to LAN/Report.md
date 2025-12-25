@@ -12,11 +12,11 @@
 ## Table of Contents
 
 1. Concept Summary
-2. Challenges Faced
+2. Challenges Faced - Hands-on labs
 3. Conclusion
 
 ## Concept Summary
 
-## Challenges Faced
+## Challenges Faced - Hands-on labs
 
 ## Conclusion
