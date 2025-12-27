@@ -109,6 +109,12 @@ After thinking about it, I click the crossed lock and I got the answer. It is pa
 
 This is an interesting challenge. This challenge helps me to reinforce my understanding on how different HTTP methods work, such as GET, POST, PUT, DELETE, etc. On this image given above, I performed a POST request that challenges me to understand how parameters can be passed together in order to fulfil the request. Wihtout any parameters, the request will not run. The challenge also provides the request as well as the response formatted in HTTP. This helps on understanding more detail about what is happening in the backend of the web server itself.
 
+#### Wrong Answer
+
+![Thought it was 500](Assets/2.png "It was 503")
+
+At this question, I was mixed the HTTP error code between 500 and 503. They have similarities. After reading the question again, it has the word "cannot access its database", which I expect that the client cannot access the web server in any kind. The first thought was it has a generic error in a request, so I answered 500. 
+
 ## Conclusion
 
 This room provides a valuable material about HTTP, where it is the core fundamental of how the web works in general. This room is recommended for anyone who wants to deep dive into web application security, as this is the critical layer of the web itself. 
