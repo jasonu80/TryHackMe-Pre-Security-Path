@@ -62,7 +62,7 @@ There are multiple ways for performing this. The first way is using a `http.serv
 
 ![Retrieve contents from vulnerable machine](Assets/1.png "Retrieve contents from a vulnerable machine")
 
-![Download contents and view the content](Assets/2.png "Download and view the contents of the file.")
+![Download contents and view the content](Assets/y.png "Download and view the contents of the file.")
 
 Possible errors: direct the output into a file with the same extension, such as `wget source/filename > filenameX; cat filenameX`. I tried this and the output (`filenameX`) does not show anything. The contents of the download will be viewable with the name of that is same within the source.
 
@@ -82,7 +82,7 @@ The screenshot below demonstrates an SCP without the need to use `http.server`:
 
 ![Using SCP to transfer files](Assets/4.png "SCP to transfer files")
 
-![Result check](Assets/5.png "Results")
+![Result check](Assets/x.png "Results")
 
 More info about `http.server` with python3: [Link](https://docs.python.org/3/library/http.server.html)
 
