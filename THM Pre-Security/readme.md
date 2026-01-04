@@ -7,4 +7,4 @@ Gained the Certificate: 10th January 2025
 
 Redone the rooms: December 2025 - January 2026.
 
-![Certificate](Completion%20Certificate.pdf "Certificate")
+![Certificate](CompletionCertificate.pdf "Certificate")
