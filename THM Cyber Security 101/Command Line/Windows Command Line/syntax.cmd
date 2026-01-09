@@ -1,34 +1,34 @@
-// Commands learned:
+:: Commands learned:
 
-set // Displays the environment of the path.
-ver // Displays the version of the Windows machine
-systeminfo // Displays detailed system information about the machine
-ipconfig // Displays the IP address of the machine, detailed can use the flag /a
-type // view files
-tasklist // list processes that are currently running on the system
-taskkill // Kill processes that are currently running on the system
+set :: Displays the environment of the path.
+ver :: Displays the version of the Windows machine
+systeminfo :: Displays detailed system information about the machine
+ipconfig :: Displays the IP address of the machine, detailed can use the flag /a
+type :: view files
+tasklist :: list processes that are currently running on the system
+taskkill :: Kill processes that are currently running on the system
 // The files and directories command in Windows are similar with the Linux Operating System.
 
-/** 
+/*
 Task 1: View the Windows version.
 Task 2: View the physical address of the machine.
 Task 3: Filter the tasklist of the process called "app.exe".
 Task 4: Kill the PID of a specific app with the number 1517.
-**/
+*/
 
-// task 1
+:: task 1
 
 ver
 
-/** Output (it has the answer to the question)
+/* Output (it has the answer to the question)
 Microsoft Windows [Version {REDACTED}]
-**/
+*/
 
-//task 2
+:: task 2
 
 ipconfig /all
 
-/**output: 
+/*output: 
 Windows IP Configuration
 
    Host Name . . . . . . . . . . . . : [REDACTED]
@@ -59,16 +59,16 @@ Ethernet adapter Ethernet:
    DHCPv6 Client DUID. . . . . . . . : 00-01-00-01-2D-B9-B7-EF-00-0C-29-FF-E5-C8
    DNS Servers . . . . . . . . . . . : 10.48.0.2
    NetBIOS over Tcpip. . . . . . . . : Enabled
-**/
+*/
 
-// Task 3
+:: Task 3
 
 tasklist /FI "IMAGENAME eq app.exe"
 
-// It displays the image name with the PID related with it. 
+:: It displays the image name with the PID related with it. 
 
-// Task 4
+:: Task 4
 
 taskkill /PID 1517
 
-// This automatically kills the process ID of the task 1517.
+:: This automatically kills the process ID of the task 1517.
