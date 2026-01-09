@@ -7,28 +7,32 @@ ipconfig :: Displays the IP address of the machine, detailed can use the flag /a
 type :: view files
 tasklist :: list processes that are currently running on the system
 taskkill :: Kill processes that are currently running on the system
-// The files and directories command in Windows are similar with the Linux Operating System.
+:: The files and directories command in Windows are similar with the Linux Operating System.
 
-/*
+@echo off
 Task 1: View the Windows version.
 Task 2: View the physical address of the machine.
 Task 3: Filter the tasklist of the process called "app.exe".
 Task 4: Kill the PID of a specific app with the number 1517.
-*/
+
+: EndCommentBlock
 
 :: task 1
 
 ver
 
-/* Output (it has the answer to the question)
+@echo off
+Output (it has the answer to the question)
 Microsoft Windows [Version {REDACTED}]
-*/
+
+: EndCommentBlock
 
 :: task 2
 
 ipconfig /all
 
-/*output: 
+@echo off
+output: 
 Windows IP Configuration
 
    Host Name . . . . . . . . . . . . : [REDACTED]
@@ -59,7 +63,8 @@ Ethernet adapter Ethernet:
    DHCPv6 Client DUID. . . . . . . . : 00-01-00-01-2D-B9-B7-EF-00-0C-29-FF-E5-C8
    DNS Servers . . . . . . . . . . . : 10.48.0.2
    NetBIOS over Tcpip. . . . . . . . : Enabled
-*/
+
+: End Comment
 
 :: Task 3
 
