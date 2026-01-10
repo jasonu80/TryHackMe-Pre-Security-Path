@@ -1,12 +1,26 @@
 :: Commands learned:
 
-set :: Displays the environment of the path.
-ver :: Displays the version of the Windows machine
-systeminfo :: Displays detailed system information about the machine
-ipconfig :: Displays the IP address of the machine, detailed can use the flag /a
-type :: view files
-tasklist :: list processes that are currently running on the system
-taskkill :: Kill processes that are currently running on the system
+set 
+:: Displays the environment of the path.
+
+ver 
+:: Displays the version of the Windows machine
+
+systeminfo 
+:: Displays detailed system information about the machine
+
+ipconfig 
+:: Displays the IP address of the machine, detailed can use the flag /a
+
+type 
+:: view files
+
+tasklist 
+:: list processes that are currently running on the system
+
+taskkill 
+:: Kill processes that are currently running on the system
+
 :: The files and directories command in Windows are similar with the Linux Operating System.
 
 @echo off
