@@ -20,4 +20,16 @@ Solutions can be found at this [file](Assets/answers.ps1) repo.
 
 ## Skills learned
 
+### Hard Skills:
+
+Powershell
+Windows Command Line commands.
+
+### Soft Skills: 
+
+Problem Solving
+Written Communication (Documentation)
+
 ## Conclusion
+
+This room covers a powerful command line tool called powershell, a scriping language that is utilised by many IT professionals in the field. Understanding this language will help enhance the ability to understand the syntax of the code and perform a number of different operations in the Operating System. This language can also be installed in other Operating Systems, not only in Windows, which opens the opportunity for learners to learn the language.
