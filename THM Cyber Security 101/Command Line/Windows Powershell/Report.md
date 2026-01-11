@@ -23,11 +23,13 @@ Solutions can be found at this [file](Assets/answers.ps1) repo.
 ### Hard Skills:
 
 Powershell
+
 Windows Command Line commands.
 
 ### Soft Skills: 
 
 Problem Solving
+
 Written Communication (Documentation)
 
 ## Conclusion
