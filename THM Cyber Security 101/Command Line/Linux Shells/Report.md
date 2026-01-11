@@ -1,8 +1,18 @@
 
 # Command Line - Linux Shells - Summary
 
-## Hands-on labs and impact
+[Room Link](https://tryhackme.com/room/linuxshells)
+
+## Hands-on lab description and impact
 
 ## Skills learned 
+
+### Hard skill obtained
+
+Shell Scripting
+
+### Soft skills 
+
+Basic Problem solving
 
 ## Conclusion
