@@ -6,7 +6,7 @@
 ## Report Objectives
 
 1. Understand the TCP/IP Three way handshake based on 2 communications
-2. Understand the response of a device if it is up or not using netcat.
+2. Understand the thinking process when there is a wrong answer.
 
 ## Table of Contents
 
@@ -20,7 +20,7 @@
 
 I have completed this room back in January 2025. I restarted the progress on 26th December 2025 to refresh my memory. 
 
-In this room, I have tried to answer and understand the underlying concepts inside the room. I also simulated the hands-on labs provided in it, which is the three-way TCP/IP handshake. In addition, I also tried to understand on how to know if the a specific IP address with a specific port is opened or not, using a tool called `netcat`.
+In this room, I have tried to answer and understand the underlying concepts inside the room. I also simulated the hands-on labs provided in it, which is the three-way TCP/IP handshake. In addition, I tried to approach on how I answer the discussion question that I got wrong.
 
 ## What I observed
 
@@ -30,7 +30,7 @@ I observed that this room is useful for understanding more depth about networkin
 
 On this room, I am able to learn about:
 
-- The differences between a frame and a packet - where a packet contains an encapsulated IP address while a frame contains an encapsulated MAC address. Frame c
+- The differences between a frame and a packet - where a packet contains an encapsulated IP address while a frame contains an encapsulated MAC address.
 - Understand the process of the three-way handshake for TCP/IP and UDP/IP - Because TCP is a stateful connection, which is a connection that ensures data is received to another device, the devices will have an active communication in both. While UDP offers a stateless connection, if one of the devices request on the other device, the other will just sent it to the device that requested the packet, no matter if the connection dropped. 
 
 ## How do I approach uncertainty
