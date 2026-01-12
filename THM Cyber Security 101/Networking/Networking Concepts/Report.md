@@ -110,32 +110,40 @@ telnet 10.49.128.242 7
 #telnet> quit
 #Connection closed.
 
-root@ip-10-49-119-54:~# telnet 10.49.128.242 13
-Trying 10.49.128.242...
-Connected to 10.49.128.242.
-Escape character is '^]'.
-Mon Jan 12 09:27:30 AM UTC 2026
-Connection closed by foreign host.
+telnet 10.49.128.242 13
 
-root@ip-10-49-119-54:~# telnet 10.49.128.242 80
-Trying 10.49.128.242...
-Connected to 10.49.128.242.
-Escape character is '^]'.
-GET / HTTP/1.1
-Host: telnet.thm
+#Output:
 
-HTTP/1.1 200 OK
-Content-Type: text/html
-ETag: "2920831920"
-Last-Modified: Thu, 20 Jun 2024 12:39:38 GMT
-Content-Length: 20
-Accept-Ranges: bytes
-Date: Mon, 12 Jan 2026 09:28:22 GMT
-Server: lighttpd/1.4.63
+#Trying 10.49.128.242...
+#Connected to 10.49.128.242.
+#Escape character is '^]'.
+#Mon Jan 12 09:27:30 AM UTC 2026
+#Connection closed by foreign host.
 
-THM{TELNET_MASTER}
+telnet 10.49.128.242 80
 
-Connection closed by foreign host.
+#Output:
+
+#Trying 10.49.128.242...
+#Connected to 10.49.128.242.
+#Escape character is '^]'.
+#GET / HTTP/1.1
+#Host: telnet.thm
+
+#After entering twice
+
+#HTTP/1.1 200 OK
+#Content-Type: text/html
+#ETag: "2920831920"
+#Last-Modified: Thu, 20 Jun 2024 12:39:38 GMT
+#Content-Length: 20
+#Accept-Ranges: bytes
+#Date: Mon, 12 Jan 2026 09:28:22 GMT
+#Server: REDACTED
+
+#REDACTED
+
+#Connection closed by foreign host.
 ```
 
 ## Skills and Tools Learned
