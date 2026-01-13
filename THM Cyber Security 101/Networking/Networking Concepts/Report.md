@@ -76,7 +76,17 @@ The slashes are also known as subnets, which means that the first 8 bits of the 
 
 #### UDP & TCP
 
+These two protocols that are located at layer 4 play an important role in networking, especially when a user visits a web browser. 
+
+UDP (User Datagram Protocol) is a connection type that is stateless, which is the connected network will accept the packet with acknowledgement from the receiver, then the server sends the data without any further acknowledgement. This protocol is useful for running video games or watching a youtube video. 
+
+TCP (Transmission Control Protocol) is a connection that is stateful, which the connected network will accept the packet with acknowledgement from the receiver of the network. The server sends the data with the confirmation if the receiver responds back. This protocol is useful for performing chats, SMS Messaging, etc.  
+
 #### Encapsulation
+
+Encapsulation is the action of adding a trail or header in every layer in the network. This layer starts from the application data, which is the first layer, packed with info from Layer 5 to 7. Then, adding the header for layer 4 which is a segment (TCP) or Datagram (UDP). Some sources cited that Datagram runs at layer 3. After that, Layer 3 is adding the IP address header called packet, then adding Layer 2 which consists of the header that contains the MAC address of the device, called frame. 
+
+If the process has finished, the headers will be sent to across different routers, checking every single router if the header contains the destination address. If a router has it, then it performs the process called decapsulation, which removes a trail or header in every network layer. It is the reverse of encapsulation.
 
 ## Hands-on Lab: Telnet
 
@@ -148,4 +158,18 @@ telnet 10.49.128.242 80
 
 ## Skills and Tools Learned
 
+#### Hard skills
+
+Networking
+
+telnet
+
+#### Soft skills
+
+Communication
+
+Understand technical language
+
 ## Conclusion
+
+This room covers broadly about the concept of network, diving into the processes of the OSI layer and encapsulation, which is an essential concept in networking itself. It is recommended to learn networking before diving into any cyber security concepts, as this concept is the fundamental building block of every cyber security concept. 
