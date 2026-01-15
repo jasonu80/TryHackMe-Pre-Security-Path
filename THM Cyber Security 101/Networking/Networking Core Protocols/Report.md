@@ -37,7 +37,7 @@ FTP (File Transfer Protocol) is a networking protocol that functions on transfer
 
 SMTP (Simple Mail Transfer Protocol), POP3, and IMAP (Internet Message Access Protocol) are protocols that are utilised for fetching, receiving, and synchronising mail messages between the server and the client. 
 
-These protocols are running on different TCP ports simultaneously, with SMTP running on TCP with port 25, POP3 running on TCP with port 110, and IMAP running on TCP with port 143.
+These protocols are running on different TCP ports simultaneously, with SMTP running on TCP port 25, POP3 running on TCP port 110, and IMAP running on TCP port 143.
 
 #### Common Commands in SMTP:
 
