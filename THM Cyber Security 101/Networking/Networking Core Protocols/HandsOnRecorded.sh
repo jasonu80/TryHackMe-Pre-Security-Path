@@ -184,7 +184,7 @@ cat flag.txt
 
 # Task 3: Connect to POP3 and retrieve the flag with the username and password. (Username: Admin, Password: @dm1nistr@t0r12345!)
 
-# There are no tools that are available for viewing messages in Linux distribution, so it uses telnet to connect to POP3 protocol. 
+# There are no tools that are available for viewing messages in Linux distribution, so it uses telnet to connect to POP3 TCP protocol. 
 
 # Here is the process:
 
