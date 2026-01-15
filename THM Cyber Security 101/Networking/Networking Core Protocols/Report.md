@@ -39,6 +39,48 @@ SMTP (Simple Mail Transfer Protocol), POP3, and IMAP (Internet Message Access Pr
 
 These protocols are running on different TCP ports simultaneously, with SMTP running on TCP with port 25, POP3 running on TCP with port 110, and IMAP running on TCP with port 143.
 
+#### Common Commands in SMTP:
+
+- HELO or EHLO -> Starts the SMTP session
+  
+- MAIL FROM -> Provides the Sender’s address
+  
+- RCPT TO -> Provides the Receiver’s address
+  
+- DATA -> The body of the mail.
+  
+- . -> End of the message.
+
+#### Common Commands in POP3: 
+
+- USER <username> -> Entering the username credential.
+    
+- PASS <password> -> Entering the password credential.
+  
+- STAT -> number of messages of the user and the total size.
+  
+- LIST -> List all messages and their sizes.
+  
+- RETR <msg_num> -> Retrieve a specific message with the input of message number.
+  
+- DELE <msg_num> -> Delete a specific message, with the input of message number.
+  
+- QUIT -> Apply POP3 changes.
+
+#### Common Commands in IMAP:
+
+- LOGIN <username> <password> -> Provide user authentication
+
+- SELECT <mailbox> -> Selects the mailbox to work into.
+
+- FETCH <mail_num> <data_item_name> -> Fetch message number with the mail number and the item name (for instance, body[] is the most common item name)
+
+- MOVE <seq_set> <mailbox> -> Moves the messages to another mailbox that is selected.
+
+- COPY <seq_set> <data_item_name> -> Copy specified message to another mailbox.
+
+- LOGOUT -> ends the IMAP session.
+
 ## Skills learned
 
 #### Hard skills
