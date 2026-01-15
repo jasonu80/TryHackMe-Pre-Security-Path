@@ -87,7 +87,7 @@ whois x.com
 #Registrars.
 #This WHOIS server is being retired. Please use our RDAP service instead. Rate limit exceeded. Try again after: 2562047h47m16.854775807s.
 
-# Tools 3: telnet
+# Tools 3: telnet (deep dive into this one)
 
 # Task 1: Retrieve the file flag.html using telnet. 
 
@@ -135,4 +135,108 @@ Host: anything
 #</body>
 #</html>
 
+# Here, I got the content of the web page itself, by connecting it via telnet.
 
+
+# Task 2: Retrieve flag.txt using ftp protocol. 
+
+# We know that FTP runs on port 21. Using the command ftp that is already installed in the Linux machine, the client is directly connected to the machine via ftp.
+
+# Then, we need to provide the username and password if needed. 
+
+# After that, list the files inside the ftp protocol and retrieve the file to the client system by using the command `get`. 
+
+# Here is the process:
+
+ftp <IP Address>
+
+#Connected to <IP Address>.
+#220 (vsFTPd 3.0.5)
+#Name (<IP Address>:root): anonymous
+#331 Please specify the password.
+#Password: # No password is provided, so enter to proceed.
+#230 Login successful.
+#Remote system type is UNIX.
+#Using binary mode to transfer files.
+#ftp> ls
+#200 PORT command successful. Consider using PASV.
+#150 Here comes the directory listing.
+#-rw-r--r--    1 0        0            1480 Jun 27  2024 coffee.txt
+#-rw-r--r--    1 0        0              14 Jun 27  2024 flag.txt
+#-rw-r--r--    1 0        0            1595 Jun 27  2024 tea.txt
+#226 Directory send OK.
+#ftp> get flag.txt
+#local: flag.txt remote: flag.txt
+#200 PORT command successful. Consider using PASV.
+#150 Opening BINARY mode data connection for flag.txt (14 bytes).
+#226 Transfer complete.
+#14 bytes received in 0.00 secs (62.7150 kB/s)
+#ftp> exit
+#221 Goodbye.
+
+ls
+
+#burp.json  CTFBuilder  Desktop  Downloads  flag.txt  Instructions  Pictures  Postman  Rooms  Scripts  snap  thinclient_drives  Tools
+
+cat flag.txt 
+
+#REDACTED
+
+# Task 3: Connect to POP3 and retrieve the flag with the username and password. (Username: Admin, Password: @dm1nistr@t0r12345!)
+
+# There are no tools that are available for viewing messages in Linux distribution, so it uses telnet to connect to POP3 protocol. 
+
+# Here is the process:
+
+telnet <IP Target> 110
+# Trying <IP Target>...
+# Connected to <IP Target>.
+# Escape character is '^]'.
+# +OK [XCLIENT] Dovecot (Ubuntu) ready.
+# USER Admin PASS @dm1nistr@t0r12345!
+# +OK
+# STAT
+# -ERR Unknown command.
+# PASS adm1nistr@t0r12345!
+# -ERR [AUTH] Authentication failed.
+# PASS @dm1nistr@t0r12345!
+# -ERR No username given.
+# USER Admin
+# +OK
+# PASS @dm1nistr@t0r12345!
+# +OK Logged in.
+# STAT
+# +OK 4 2216
+# RETR 4
+# +OK 454 octets
+# Return-path: <user@client.thm>
+# Envelope-to: linda@server.thm
+# Delivery-date: Thu, 12 Sep 2024 20:12:42 +0000
+# Received: from [10.11.81.126] (helo=client.thm)
+# 	by example.thm with smtp (Exim 4.95)
+# 	(envelope-from <user@client.thm>)
+# 	id 1soqAj-0007li-39
+# 	for linda@server.thm;
+# 	Thu, 12 Sep 2024 20:12:42 +0000
+#From: user@client.thm
+#To: linda@server.thm
+#Subject: Your Flag
+
+#Hello!
+#Here's your flag:
+#REDACTED
+#Enjoy your journey!
+#.
+#QUIT
+#+OK Logging out.
+#Connection closed by foreign host.
+
+# The first thing is to connect to POP3 protocol using telnet by specifying the target of the IP address provided and the port that is running.
+
+# Then, Provide the username first then enter the password afterwards. 
+
+# The command STAT provides the information about how many mails are available inside of the inbox of a specific user. In this case, it is 4 mails.
+
+# RETR means to retrieve, which is to fetch any mail number that is less than the number of mail that is provided on the STAT command. In this case, it is 4.
+
+# QUIT means to logout from the server and continue on the current shell that is running.
