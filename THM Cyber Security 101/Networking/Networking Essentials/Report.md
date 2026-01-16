@@ -15,6 +15,8 @@ ARP (Address Resolution Protocol) is a network protocol that is utilised to tran
 
 #### ICMP (Internet Control Message Protocol)
 
+![ICMP Request](Assets/ICMPPingRequest.png)
+
 ICMP (Internet Control Message Protocol) is a network protocol that is utilised in a device to check the connectivity or status of other servers. This is beneficial for performing network troubleshooting, such as internet connectivity with the host and finding the route to the server itself, using `ping` and `traceroute`. 
 
 #### Routing
