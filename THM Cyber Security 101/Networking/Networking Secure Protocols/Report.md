@@ -45,7 +45,7 @@ Wireshark
 
 #### Soft Skills
 
-Analysis
+Analytical thinking
 
 ## Conclusion
 
