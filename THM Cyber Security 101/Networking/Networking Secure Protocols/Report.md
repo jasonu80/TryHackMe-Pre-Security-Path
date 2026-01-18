@@ -31,9 +31,9 @@ A VPN (Virtual Private Network) is a type of network that allows clients to crea
 
 ## Hands-on Labs
 
-Task: Find the login credentials, in Wireshark, that is captured in HTTPS traffic. 
+Task: Find the login credentials, in Wireshark, that is captured in HTTPS traffic.  
 
-At the moment, the machine has an unresolved bug, so this will be done after the bug is resolved.
+Solution and step-by-step process: [Solution](Assets/Solutions.md)
 
 ## Skills learned
 
